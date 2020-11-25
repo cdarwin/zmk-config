@@ -65,10 +65,11 @@ jobs:
         id: west-build
         with:
           args: 'build "-s zmk/app -b ${{ matrix.board }} -- -DSHIELD=${{ matrix.shield }} -DZMK_CONFIG=/github/workspace/config"'
+      - name: Rename zmk.uf2
+        run: "cp build/zephyr/zmk.uf2 zmk-${{ matrix.board }}-${{ matrix.shield }}.uf2"
       - name: Archive Build
         uses: actions/upload-artifact@v2
-        if: ${{ matrix.board != 'proton_c' }}
         with:
-          name: "${{ matrix.board }}-${{ matrix.shield }}-zmk-uf2"
-          path: build/zephyr/zmk.uf2
+          name: "zmk-${{ matrix.board }}-${{ matrix.shield }}-uf2"
+          path: "zmk-${{ matrix.board }}-${{ matrix.shield }}.uf2"
 
