@@ -18,14 +18,13 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-        bh: layer_taps 
-		{
-			compatible = "zmk,behavior-hold-tap";
-			label = "Layer-Tap";
-			#binding-cells = <2>;
-			tapping_term_ms = <200>;
+        bh: layer_taps {
+						compatible = "zmk,behavior-hold-tap";
+						label = "Layer-Tap";
+						#binding-cells = <2>;
+						tapping_term_ms = <200>;
             flavor = "tap-preferred";
-			bindings = <&mo>, <&kp>;
+						bindings = <&mo>, <&kp>;
         };
     };
 };
@@ -47,7 +46,7 @@
     &kp TAB       &kp N7      &kp N8      &kp N9       &kp SEMI  &kp SQT   &none          &none         &none       &kp RET
     &hm LCTRL ESC &hm LALT N4 &hm LGUI N5 &hm LSHFT N6 &kp MINUS &kp EQUAL &hm LSHFT LEFT &hm LGUI DOWN &hm LALT UP &hm LCTRL RIGHT
     &kp N0        &kp N1      &kp N2      &kp N3       &kp GRAVE &kp BSLH  &none          &kp DOT       &kp FSLH
-    &none         &none       &none       &none        &none               &none          &none         &none
+    &soft_off     &none       &none       &none        &none               &none          &none         &none
             >;
         };
 
