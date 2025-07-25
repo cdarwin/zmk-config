@@ -1,3 +1,4 @@
 build:
+  depends: zmk-keyboard-ble_chiffre
   settings:
     board_root: .
