@@ -48,7 +48,7 @@
             bindings = <
     &kp TAB       &kp N7      &kp N8      &kp N9       &kp SEMI  &kp SQT   &none          &none         &none       &kp RET
     &hm LCTRL ESC &hm LALT N4 &hm LGUI N5 &hm LSHFT N6 &kp MINUS &kp EQUAL &hm LSHFT LEFT &hm LGUI DOWN &hm LALT UP &hm LCTRL RIGHT
-    &kp N0        &kp N1      &kp N2      &kp N3       &kp GRAVE &kp BSLH  &none          &none         &none       &none
+    &kp N0        &kp N1      &kp N2      &kp N3       &kp GRAVE &kp BSLH  &none          &none         &none       &studio_unlock
                                                  &none &none     &none &none
             >;
         };
